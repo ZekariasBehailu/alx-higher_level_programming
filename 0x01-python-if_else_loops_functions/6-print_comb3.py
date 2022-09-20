@@ -1,5 +1,10 @@
 #!/usr/bin/python3
-for x in range(0, 8):
-    for y in range(x + 1, 10):
-        print("{:d}{:d}".format(x, y), end=', ')
-print("{:d}{:d}".format(x + 1, y))
+for n in range(0, 10):
+    for m in range(0, 10):
+        if n < m:
+            if int(str(n) + str(m)) < 89:
+                print("{}{}".format(n, m), end=", ")
+            else:
+                print("{}{}".format(n,m), end="\n")
+        else:
+            continue
